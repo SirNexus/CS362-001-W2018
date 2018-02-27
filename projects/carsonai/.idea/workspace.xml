@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8eddf1b9-d726-4b04-9ca2-12c2855a7b90" name="Default" comment="" />
+    <list default="true" id="de51ca6a-1e60-42d0-a600-cf687f2504c4" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +14,11 @@
       <projects_view />
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="134" />
-    <option name="y" value="39" />
-    <option name="width" value="3066" />
-    <option name="height" value="1761" />
+    <option name="y" value="183" />
+    <option name="width" value="3056" />
+    <option name="height" value="1324" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -35,15 +35,27 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="carsonai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="carsonai" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carsonai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="carsonai" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment-4" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignment-4" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -145,16 +157,16 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8eddf1b9-d726-4b04-9ca2-12c2855a7b90" name="Default" comment="" />
-      <created>1518997528278</created>
+      <changelist id="de51ca6a-1e60-42d0-a600-cf687f2504c4" name="Default" comment="" />
+      <created>1519684639496</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1518997528278</updated>
+      <updated>1519684639496</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="134" y="39" width="3066" height="1761" extended-state="0" />
+    <frame x="134" y="35" width="3066" height="1765" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
