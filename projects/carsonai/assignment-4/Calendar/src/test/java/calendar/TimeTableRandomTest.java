@@ -65,7 +65,8 @@ public class TimeTableRandomTest {
 		try{ 
             for (int i = 0; i < NUM_TESTS; i++) {
                 LinkedList<Appt> listAppts = new LinkedList<Appt>();
-                for (int iteration = 0; elapsed < 100; iteration++) {
+                Appt removeAppt = null;
+                for (int iteration = 0; elapsed < NUM_TESTS; iteration++) {
                     long randomseed =System.currentTimeMillis(); //10
         //			System.out.println(" Seed:"+randomseed );
                     Random random = new Random(randomseed);
@@ -86,16 +87,25 @@ public class TimeTableRandomTest {
                             title,
                             description);
                             
-                if(!appt.getValid())continue;
+                // if(!appt.getValid())continue;
                 
                 listAppts.add(appt);
                 elapsed = (Calendar.getInstance().getTimeInMillis() - startTime);
+
+                if (appt.getValid()){
+                    removeAppt = appt;
+                }
+
                 if((iteration%10000)==0 && iteration!=0 )
                       System.out.println("elapsed time: "+ elapsed + " of "+TestTimeout);
                 }
                 LinkedList<CalDay> calDays = new LinkedList<CalDay>();
                 TimeTable timeTable=new TimeTable();
                 calDays = timeTable.getApptRange(listAppts, day, nextDay);
+
+                listAppts = timeTable.deleteAppt(listAppts, removeAppt);
+                listAppts = null;
+                listAppts = timeTable.deleteAppt(listAppts, removeAppt);
             }
 		}catch(NullPointerException e){
 			
