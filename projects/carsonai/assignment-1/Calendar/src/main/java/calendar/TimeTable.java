@@ -32,14 +32,6 @@ public class TimeTable {
 		  
 		     //Create a linked list of calendar days <CalDay> to return
 	        LinkedList<CalDay> calDays = new LinkedList<CalDay>();
-	     
-
-	        
-	        //Make sure that the first day is before the last day
-	        if (!firstDay.before(lastDay)) {
-	        	throw new DateOutOfRangeException ("Second date specified is not  before the first date specified.");
-	        }
-	        
 	        
 	        //Create the first CalDay object with the starting date and add to list
 	        GregorianCalendar nextDay = (GregorianCalendar) firstDay.clone();
