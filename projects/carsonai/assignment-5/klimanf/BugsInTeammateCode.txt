@@ -1,0 +1,4 @@
+The first bug that was caught was in the method on line 163 of Appt.java. The bug was that if a null string was provided for an appt title, the title would incorrectly be set to “null” and not an empty string “”. This bug was caught by test02 in ApptTest.java on line 58 by attempting to set the title to null. Then on line 59, the title was asserted to by “”, but it was incorrectly set to null.
+
+The second bug that was caught was in the method on line 115 of Appt.java. This bug was in the isValid() method, and had the lower limit of the allowed starthour to be less than 1. This is incorrect, as a startHour should be less than 0. The test that caught this bug was in test03 of ApptTest.java on line 98. The startHour was set to 0 and then isValid() was asserted to return true, but in fact it returned false.
+
